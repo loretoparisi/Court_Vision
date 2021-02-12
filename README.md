@@ -46,3 +46,16 @@ Dev Dependencies:
 NBA stats API:
 
 - [nba-api-client](https://www.npmjs.com/package/nba-api-client)
+
+
+## macoOS
+Install and run steps for macOS
+```
+brew tap mongodb/brew
+npm uninstall mongo
+npm uninstall mongo-community
+npm install mongo-community
+cd Court_Vision/
+npm install
+npm start
+```
