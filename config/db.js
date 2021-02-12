@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const mongoURI = process.env.MONGO_URI || require("config").get("mongoURI");
+const mongoURI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017' || require("config").get("mongoURI");
 
 function connectDB() {
   mongoose

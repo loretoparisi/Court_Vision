@@ -2,7 +2,10 @@ const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const jwtSecret = (process.env.JWT_SECRET || require('config').get('jwtSecret'));
+
+//JWT_SECRET=  any text or number you want to add here to create jwt Token
+//JWT_EXPIRATION_TIME= you have to specify time limit like you want thattoken expire in 24 hours you have to add  60 * 60 * 24 or  86400 // 24 hours
+const jwtSecret = 'abcdefghijklmnopqrstwabcdefghijklmnopqrstuvwxyz'
 const { check, validationResult } = require("express-validator");
 
 const User = require("../../models/Users");
